@@ -163,7 +163,7 @@ public final class KMapSolver {
                     c++;
             }
 
-            if(region.getWidth() < 0)
+            if(region.getHeight() < 0)
                 r--;
             else
                 r++;
