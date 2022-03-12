@@ -25,6 +25,7 @@ import com.slava_110.kmapsolver.solver.GrayCode;
 import com.slava_110.kmapsolver.solver.KMapSize;
 import com.slava_110.kmapsolver.solver.KMapSolver;
 import com.slava_110.kmapsolver.solver.KMapSolver.KMapCell;
+import com.slava_110.kmapsolver.solver.Pos;
 import com.slava_110.kmapsolver.util.ComponentDrawingUtils;
 import com.slava_110.kmapsolver.util.ComponentUtils;
 
@@ -117,22 +118,25 @@ public class LKarnaughMap extends InstanceFactory {
                 KMapCell begin = interval.get(0);
                 KMapCell end = interval.get(interval.size() - 1);
 
-                boolean yCont = end.row - begin.row == 3 && !interval.stream().anyMatch(c -> c.row == 1);
-                boolean xCont = end.col - begin.col == 3 && !interval.stream().anyMatch(c -> c.col == 1);
+                Pos beginPos = new Pos(Math.min(interval.get(0).row, interval.get(interval.size() - 1).row), Math.min(interval.get(0).col, interval.get(interval.size() - 1).col));
+                Pos endPos = new Pos(Math.max(interval.get(0).row, interval.get(interval.size() - 1).row), Math.max(interval.get(0).col, interval.get(interval.size() - 1).col));
+
+                boolean yCont = endPos.row - beginPos.row == 3 && !interval.stream().anyMatch(c -> c.row == 1);
+                boolean xCont = endPos.col - beginPos.col == 3 && !interval.stream().anyMatch(c -> c.col == 1);
 
                 if(xCont && yCont) {
-                    drawInterval(g1, bounds, begin.col + 1, begin.row + 1, 0, 0);
-                    drawInterval(g1, bounds, begin.col + 1, end.row + 1, 0, 5);
-                    drawInterval(g1, bounds, end.col + 1, begin.row + 1, 5, 0);
-                    drawInterval(g1, bounds, end.col+ 1, end.row + 1, 5, 5);
+                    drawInterval(g1, bounds, beginPos.col + 1, beginPos.row + 1, 0, 0);
+                    drawInterval(g1, bounds, beginPos.col + 1, endPos.row + 1, 0, 5);
+                    drawInterval(g1, bounds, endPos.col + 1, beginPos.row + 1, 5, 0);
+                    drawInterval(g1, bounds, endPos.col+ 1, endPos.row + 1, 5, 5);
                 } else if(yCont) {
-                    drawInterval(g1, bounds, begin.col + 1, begin.row + 1, end.col + 1, 0);
-                    drawInterval(g1, bounds, end.col + 1, end.row + 1, begin.col + 1, 5);
+                    drawInterval(g1, bounds, beginPos.col + 1, beginPos.row + 1, endPos.col + 1, 0);
+                    drawInterval(g1, bounds, endPos.col + 1, endPos.row + 1, beginPos.col + 1, 5);
                 } else if(xCont) {
-                    drawInterval(g1, bounds, begin.col + 1, begin.row + 1, 0, end.row + 1);
-                    drawInterval(g1, bounds, end.col + 1, end.row + 1, 5, begin.row + 1);
+                    drawInterval(g1, bounds, beginPos.col + 1, beginPos.row + 1, 0, endPos.row + 1);
+                    drawInterval(g1, bounds, endPos.col + 1, endPos.row + 1, 5, beginPos.row + 1);
                 } else {
-                    drawInterval(g1, bounds, begin.col + 1, begin.row + 1, end.col + 1, end.row + 1);
+                    drawInterval(g1, bounds, beginPos.col + 1, beginPos.row + 1, endPos.col + 1, endPos.row + 1);
                 }
             }
             g1.dispose();
