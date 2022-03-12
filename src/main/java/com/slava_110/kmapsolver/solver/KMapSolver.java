@@ -122,7 +122,7 @@ public final class KMapSolver {
                 groupsThatContainCellsGrouppedBefore.add(group);
         }
 
-        if(groupsThatContainCellsGrouppedBefore.size() > 0 && groupsThatContainCellsGrouppedBefore.size() != composedGroups.size()) {
+        if(!groupsThatContainCellsGrouppedBefore.isEmpty() && groupsThatContainCellsGrouppedBefore.size() != composedGroups.size()) {
             return composedGroups.stream()
                     .filter(group ->
                             !groupsThatContainCellsGrouppedBefore.contains(group)
