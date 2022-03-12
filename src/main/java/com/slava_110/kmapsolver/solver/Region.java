@@ -28,8 +28,8 @@ public final class Region {
     public static List<Region> generateRegions(KMapSize size) {
         List<Region> res = new ArrayList<>();
 
-        for (int w = 1; w < size.getCols(); w *= 2) {
-            for (int h = 1; h < size.getRows();h *= 2) {
+        for (int w = 1; w <= size.getCols(); w *= 2) {
+            for (int h = 1; h <= size.getRows(); h *= 2) {
                 res.add(new Region(w, h));
 
                 if((w == 1 && h == 1) || (w == size.getCols() && h == size.getRows()))
@@ -57,7 +57,7 @@ public final class Region {
             }
         }
 
-        res.sort(Comparator.comparingInt(Region::getArea));
+        res.sort(Comparator.comparingInt(Region::getArea)); //
         return res;
     }
 }
