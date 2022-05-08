@@ -24,7 +24,7 @@ public final class KMapSolver {
         if(mknf) {
             List<Integer> finalTerms = terms;
             terms = IntStream.range(0, size.getTotalSize())
-                    .filter(num -> !finalTerms.contains(num))
+                    .filter(num -> !finalTerms.contains(num) && !dontCares.contains(num))
                     .boxed()
                     .collect(Collectors.toList());
         }
@@ -49,32 +49,9 @@ public final class KMapSolver {
 
             groups.add(group);
 
-            /*termQueue = termQueue.stream()
+            termQueue = termQueue.stream()
                     .filter(term -> !group.stream().anyMatch(cell -> cell.decimal == term))
-                    .collect(Collectors.toCollection(LinkedList::new));*/
-
-            for (KMapCell cell : group) {
-                termQueue.removeIf(term -> cell.decimal == term);
-            }
-        }
-
-        ListIterator<List<KMapCell>> iter = groups.listIterator();
-        while (iter.hasNext()) {
-            List<KMapCell> group = iter.next();
-            if(!group.stream()
-                    .filter(
-                            cell -> !groups.stream()
-                                    .filter(group1 -> group != group1)
-                                    .anyMatch(
-                                            group1 -> group1.contains(cell)
-                                    )
-                    )
-                    .findAny()
-                    .isPresent()
-            ) {
-                iter.remove();
-                continue;
-            }
+                    .collect(Collectors.toCollection(LinkedList::new));
         }
 
         return groups;
@@ -102,15 +79,18 @@ public final class KMapSolver {
         List<List<KMapCell>> composedGroups = new ArrayList<>(1);
         composedGroups.add(Collections.singletonList(kMap[pos.row][pos.col]));
 
+        int maxSize = 0;
+
         for (Region region : regions) {
             final List<KMapCell> cells = checkRegion(kMap, size, terms, region, pos);
             if(cells.isEmpty())
                 continue;
 
-            if(cells.size() > composedGroups.get(0).size()) {
+            if(cells.size() > maxSize) {
                 composedGroups = new ArrayList<>();
                 composedGroups.add(cells);
-            } else if(cells.size() == composedGroups.get(0).size()) {
+                maxSize = cells.size();
+            } else if(cells.size() == maxSize) {
                 composedGroups.add(cells);
             }
         }
