@@ -1,6 +1,6 @@
 package com.slava_110.kmapsolver.solver;
 
-public final class KMapSize {
+public class KMapSize {
     private final int rowVars;
     private final int colVars;
     private final int rows;
@@ -35,5 +35,25 @@ public final class KMapSize {
 
     public int getTotalSize() {
         return cols * rows;
+    }
+
+    public KMapGrayCode generateGrayCode() {
+        String[] rowsGray = new String[rows];
+        for (int i = 0; i < rows; i++) {
+            rowsGray[i] = pad(Integer.toBinaryString(getGrayCode(i)), rowVars);
+        }
+        String[] colsGray = new String[cols];
+        for (int i = 0; i < cols; i++) {
+            colsGray[i] = pad(Integer.toBinaryString(getGrayCode(i)), colVars);
+        }
+        return new KMapGrayCode(rowsGray, colsGray);
+    }
+
+    private static String pad(String toPad, int size) {
+        return String.format("%1$" + size + "s", toPad).replace(' ', '0');
+    }
+
+    private static int getGrayCode(int x) {
+        return x ^ (x >> 1);
     }
 }

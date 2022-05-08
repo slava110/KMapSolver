@@ -21,11 +21,6 @@ import com.cburch.logisim.instance.InstanceFactory;
 import com.cburch.logisim.instance.InstancePainter;
 import com.cburch.logisim.instance.InstanceState;
 import com.cburch.logisim.instance.Port;
-import com.slava_110.kmapsolver.solver.GrayCode;
-import com.slava_110.kmapsolver.solver.KMapSize;
-import com.slava_110.kmapsolver.solver.KMapSolver;
-import com.slava_110.kmapsolver.solver.KMapSolver.KMapCell;
-import com.slava_110.kmapsolver.solver.Pos;
 import com.slava_110.kmapsolver.util.ComponentDrawingUtils;
 import com.slava_110.kmapsolver.util.ComponentUtils;
 

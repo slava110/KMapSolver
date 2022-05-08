@@ -91,179 +91,37 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(620,130)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(660,190)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(670,370)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="j"/>
-    </comp>
-    <comp lib="7" loc="(910,530)" name="karnaugh_map"/>
-    <comp lib="7" loc="(880,340)" name="truth-table"/>
-    <comp lib="0" loc="(540,150)" name="Tunnel">
-      <a name="label" val="l"/>
-    </comp>
-    <comp lib="0" loc="(620,150)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(620,130)" name="Tunnel">
-      <a name="label" val="m"/>
-    </comp>
-    <comp lib="0" loc="(690,400)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="m"/>
-    </comp>
-    <comp lib="0" loc="(620,170)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(540,170)" name="Tunnel">
-      <a name="label" val="d"/>
-    </comp>
-    <comp lib="0" loc="(670,430)" name="Tunnel">
-      <a name="facing" val="east"/>
+    <comp lib="0" loc="(540,130)" name="Tunnel">
       <a name="label" val="p"/>
-    </comp>
-    <comp lib="0" loc="(670,330)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="f"/>
-    </comp>
-    <comp lib="0" loc="(690,380)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="k"/>
-    </comp>
-    <comp lib="0" loc="(660,130)" name="Tunnel">
-      <a name="label" val="n"/>
-    </comp>
-    <comp lib="0" loc="(660,150)" name="Tunnel">
-      <a name="label" val="j"/>
-    </comp>
-    <comp lib="0" loc="(540,190)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(690,420)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="o"/>
-    </comp>
-    <comp lib="0" loc="(690,340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="g"/>
-    </comp>
-    <comp lib="0" loc="(670,350)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="h"/>
-    </comp>
-    <comp lib="0" loc="(690,280)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="a"/>
-    </comp>
-    <comp lib="6" loc="(609,97)" name="Text">
-      <a name="text" val="Или можно использовать панель для удобства"/>
-    </comp>
-    <comp lib="0" loc="(580,130)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(660,150)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(670,310)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="d"/>
-    </comp>
-    <comp lib="0" loc="(620,190)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(205,97)" name="Text">
-      <a name="text" val="Функция может быть задана константой в векторном виде"/>
-    </comp>
-    <comp lib="0" loc="(660,170)" name="Tunnel">
-      <a name="label" val="b"/>
-    </comp>
-    <comp lib="0" loc="(660,190)" name="Tunnel">
-      <a name="label" val="f"/>
     </comp>
     <comp lib="0" loc="(620,150)" name="Tunnel">
       <a name="label" val="i"/>
     </comp>
-    <comp lib="0" loc="(580,130)" name="Tunnel">
-      <a name="label" val="o"/>
-    </comp>
-    <comp lib="0" loc="(580,150)" name="Tunnel">
-      <a name="label" val="k"/>
-    </comp>
-    <comp lib="7" loc="(260,380)" name="truth-table"/>
-    <comp lib="0" loc="(690,360)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="i"/>
-    </comp>
-    <comp lib="0" loc="(540,150)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(580,190)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(580,190)" name="Tunnel">
-      <a name="label" val="g"/>
-    </comp>
-    <comp lib="0" loc="(710,440)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="16"/>
-      <a name="incoming" val="16"/>
-      <a name="appear" val="right"/>
-    </comp>
-    <comp lib="0" loc="(620,170)" name="Tunnel">
-      <a name="label" val="a"/>
-    </comp>
-    <comp lib="0" loc="(690,320)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="e"/>
-    </comp>
-    <comp lib="7" loc="(490,530)" name="karnaugh_map"/>
-    <comp lib="0" loc="(580,170)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(540,190)" name="Tunnel">
-      <a name="label" val="h"/>
-    </comp>
-    <comp lib="0" loc="(730,470)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="МКНФ?"/>
-    </comp>
     <comp lib="0" loc="(540,130)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(670,390)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="l"/>
-    </comp>
-    <comp lib="0" loc="(200,440)" name="Constant">
-      <a name="width" val="16"/>
-      <a name="value" val="0x75a3"/>
-    </comp>
-    <comp lib="0" loc="(540,170)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(660,130)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(670,290)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="b"/>
     </comp>
+    <comp lib="0" loc="(670,350)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="h"/>
+    </comp>
+    <comp lib="0" loc="(200,440)" name="Constant">
+      <a name="width" val="16"/>
+      <a name="value" val="0xa3f6"/>
+    </comp>
+    <comp lib="0" loc="(540,190)" name="Tunnel">
+      <a name="label" val="h"/>
+    </comp>
+    <comp lib="0" loc="(690,320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="e"/>
+    </comp>
     <comp lib="0" loc="(310,470)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="МКНФ?"/>
-    </comp>
-    <comp lib="0" loc="(660,170)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(580,170)" name="Tunnel">
-      <a name="label" val="c"/>
-    </comp>
-    <comp lib="0" loc="(620,190)" name="Tunnel">
-      <a name="label" val="e"/>
-    </comp>
-    <comp lib="0" loc="(540,130)" name="Tunnel">
-      <a name="label" val="p"/>
     </comp>
     <comp lib="0" loc="(690,300)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -272,9 +130,151 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(580,150)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
+    <comp lib="0" loc="(710,440)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="7" loc="(260,380)" name="truth-table"/>
+    <comp lib="0" loc="(620,130)" name="Tunnel">
+      <a name="label" val="m"/>
+    </comp>
+    <comp lib="0" loc="(690,280)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="a"/>
+    </comp>
+    <comp lib="0" loc="(540,170)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(690,340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="g"/>
+    </comp>
+    <comp lib="0" loc="(670,310)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="d"/>
+    </comp>
+    <comp lib="0" loc="(540,150)" name="Tunnel">
+      <a name="label" val="l"/>
+    </comp>
+    <comp lib="0" loc="(620,170)" name="Tunnel">
+      <a name="label" val="a"/>
+    </comp>
+    <comp lib="0" loc="(580,130)" name="Tunnel">
+      <a name="label" val="o"/>
+    </comp>
+    <comp lib="0" loc="(620,170)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(730,470)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="МКНФ?"/>
+    </comp>
+    <comp lib="0" loc="(690,420)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="o"/>
+    </comp>
+    <comp lib="0" loc="(660,130)" name="Tunnel">
+      <a name="label" val="n"/>
+    </comp>
+    <comp lib="0" loc="(540,190)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(690,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="k"/>
+    </comp>
+    <comp lib="0" loc="(660,150)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(609,97)" name="Text">
+      <a name="text" val="Или можно использовать панель для удобства"/>
+    </comp>
+    <comp lib="0" loc="(540,170)" name="Tunnel">
+      <a name="label" val="d"/>
+    </comp>
+    <comp lib="0" loc="(620,190)" name="Tunnel">
+      <a name="label" val="e"/>
+    </comp>
+    <comp lib="7" loc="(880,340)" name="truth-table"/>
+    <comp lib="0" loc="(660,190)" name="Tunnel">
+      <a name="label" val="f"/>
+    </comp>
+    <comp lib="0" loc="(660,150)" name="Tunnel">
+      <a name="label" val="j"/>
+    </comp>
+    <comp lib="0" loc="(670,370)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="j"/>
+    </comp>
+    <comp lib="7" loc="(490,530)" name="karnaugh_map"/>
+    <comp lib="0" loc="(580,170)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(690,400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="m"/>
+    </comp>
     <comp lib="0" loc="(670,410)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="n"/>
+    </comp>
+    <comp lib="0" loc="(620,150)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="7" loc="(910,530)" name="karnaugh_map"/>
+    <comp lib="0" loc="(580,170)" name="Tunnel">
+      <a name="label" val="c"/>
+    </comp>
+    <comp lib="0" loc="(580,130)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(670,430)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="p"/>
+    </comp>
+    <comp lib="0" loc="(540,150)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(580,190)" name="Tunnel">
+      <a name="label" val="g"/>
+    </comp>
+    <comp lib="0" loc="(660,190)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(580,190)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(660,170)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(670,390)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="l"/>
+    </comp>
+    <comp lib="6" loc="(205,97)" name="Text">
+      <a name="text" val="Функция может быть задана константой в векторном виде"/>
+    </comp>
+    <comp lib="0" loc="(660,170)" name="Tunnel">
+      <a name="label" val="b"/>
+    </comp>
+    <comp lib="0" loc="(670,330)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="f"/>
+    </comp>
+    <comp lib="0" loc="(620,190)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(690,360)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="i"/>
+    </comp>
+    <comp lib="0" loc="(660,130)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(580,150)" name="Tunnel">
+      <a name="label" val="k"/>
     </comp>
   </circuit>
 </project>
